@@ -13,6 +13,7 @@
     "bluebird": "^3.5.0",
     "csv": "^1.1.1",
     "moment": "^2.18.1",
+    "moment-range": "^3.0.3",
     "promised-csv": "^1.0.1"
   }
 }
