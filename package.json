@@ -1,7 +1,7 @@
 {
   "name": "free-for-all",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "CalendarParser.js",
   "repository": "git@github.com:suzyng83209/free-for-all.git",
   "author": "Susan Li <suzyn.one@gmail.com>",
   "license": "MIT",
@@ -9,6 +9,10 @@
     "start": "node CalendarParser.js"
   },
   "dependencies": {
-    "moment": "^2.18.1"
+    "async": "^2.4.1",
+    "bluebird": "^3.5.0",
+    "csv": "^1.1.1",
+    "moment": "^2.18.1",
+    "promised-csv": "^1.0.1"
   }
 }
