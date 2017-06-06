@@ -1,10 +1,13 @@
 {
-  "name": "Free-For-All",
+  "name": "free-for-all",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:suzyng83209/free-for-all.git",
   "author": "Susan Li <suzyn.one@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node CalendarParser.js"
+  },
   "dependencies": {
     "moment": "^2.18.1"
   }
