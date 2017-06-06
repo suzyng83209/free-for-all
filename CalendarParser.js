@@ -102,12 +102,18 @@ reader.on("row", data => {
 
 // read raw data into events array and operate on it
 reader.read("calendar.csv", events).then(events => {
-  const maxFreeRangeThisWeek = findFreeTime(events).toDate();
-  const startTime = moment(maxFreeRangeThisWeek[0]).format(
-    "YYYY-MM-DD hh:mm:ss"
-  );
-  const endTime = moment(maxFreeRangeThisWeek[1]).format("YYYY-MM-DD hh:mm:ss");
+  const maxFreeRange = findFreeTime(events).toDate();
+  const meetingDate = moment(maxFreeRange[0]).format("YYYY-MM-DD");
+  const startTime = moment(maxFreeRange[0]).format("HH:mm:ss");
+  const endTime = moment(maxFreeRange[1]).format("HH:mm:ss");
+
   console.log(
-    "Everyone should meet this week from " + startTime + " to " + endTime
+    "Everyone should meet this week on " +
+      meetingDate +
+      " from " +
+      startTime +
+      " to " +
+      endTime +
+      "."
   );
 });
